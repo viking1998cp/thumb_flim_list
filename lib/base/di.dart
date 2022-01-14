@@ -7,7 +7,5 @@ class DependencyInjection {
   static Future<void> init() async {
     await Get.putAsync(() => StorageService().init());
     NetWorking.init(ENV.UI);
-    GetImageService getImageService = new GetImageService();
-    getImageService.getListWallPapger(page: 1);
   }
 }
